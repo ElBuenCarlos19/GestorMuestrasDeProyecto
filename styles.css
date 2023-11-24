@@ -1,0 +1,201 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Catamaran', sans-serif;
+    overflow-x: hidden;
+}
+/* Estilos Generales */
+.icons{
+    width: 50px;
+    height: auto;
+}
+
+.colorfondo1{
+    background-color: #f7fbff;
+    color: rgb(0, 0, 0);
+}
+
+.colorfondo2{
+    background-color: #072c52;
+    color: #d7d9db;
+}
+
+.button-general{
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-general:hover {
+    transform: scale(1.05);
+}
+
+.button-general:active {
+    transform: scale(0.95);
+}
+/* Barra de navegacion */
+
+.navbar {
+    padding: 2rem;
+    
+  }
+  
+  .navbar-collapse {
+    align-items: center;
+    justify-content: space-between;  
+  }
+  
+  .nav-link{
+      position: relative;
+      display: inline-block;
+      text-decoration: none;
+  }
+  .nav-link:after{
+      content: "";
+      display: block;
+      margin: auto;
+      width: 0px;
+      height: 2px;
+      background: #333;
+      transition: all .8s ease-in-out;
+  }
+  
+  .nav-link:hover::after{
+      width: 100%;
+      background: #333;
+  }
+  
+ /* Seccion Hero  */
+
+.hero-container{
+    padding: 60px;
+ }
+
+ .hero-imagen-desarrollador{
+    width: 170px;
+    margin-left: 100px;
+ }
+
+ #button-hero:hover{
+    background-color: #0e4b86;
+ }
+/* seccion funcionamiento */
+
+.sobremi-container{
+    padding: 25px;
+}
+
+/* seccion proyectos */
+
+
+.carousel-item{
+    position: relative;
+}
+
+.icono-personalizado {
+    width: 170px; /* Ajusta el tamaño según tus necesidades */
+    height: 170px;
+    background: url('https://github.com/ElBuenCarlos19/ImagenesPaginaWeb/blob/main/ImagenLogopaginaweb.png?raw=true') no-repeat center center;
+    background-size: contain; /* Ajusta según tus necesidades */
+  }
+
+/* seccion proyectos */
+
+.columnasproyectos{
+    position: relative;
+
+}
+.overlay{
+    opacity: 0;
+    transition: all 0.2s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.overlay a i{
+    font-size: 100px;
+    color: rgb(32, 31, 31);
+}
+
+.overlay a i:hover{
+    color: black;
+}
+
+.columnasproyectos img{
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.columnasproyectos:hover img{
+    opacity: 0.2;
+} 
+
+.columnasproyectos:hover .overlay{
+    opacity: 1;
+}
+
+/* seccion footer */
+
+.divfuter{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 75%; 
+    margin-top: -2%;
+    padding: 20px;
+}
+
+#button-footer:hover{
+    background-color: #e4e4e4;
+ }
+
+/* Responsive */
+
+@media only screen and (max-width: 1430px) {
+    .carousel{
+        width: 100%;
+    }
+    #linea{
+        width: 300%;
+    }
+
+    .columnasproyectos{
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 696px) {
+    .hero-container{
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .hero-imagen-desarrollador{
+        position: relative;
+        width: 100%;
+        transform: translateX(-20%);
+        min-width: 160px;
+    }
+    .columnasproyectos img{
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #linea{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    #divarribalinea{
+        margin-bottom: 30px;
+    }
+}
